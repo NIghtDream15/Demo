@@ -27,3 +27,26 @@ class UserExistsError(Exception):
 class RoleError(Exception):
     def __init__(self, message):
         self.message = message
+
+# 奖品等级错误
+class LevelError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+# 奖品数量错误
+class NegativeNumberError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+# Admin用户名错误
+class NotUserError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+class UserActiveError(Exception):
+    def __init__(self, message):
+        self.message = message
+
+class CountError(Exception):
+    def __init__(self, message):
+        self.message = message
