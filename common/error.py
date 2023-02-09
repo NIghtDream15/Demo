@@ -43,10 +43,12 @@ class NotUserError(Exception):
     def __init__(self, message):
         self.message = message
 
+# 用户状态错误
 class UserActiveError(Exception):
     def __init__(self, message):
         self.message = message
 
+# 数量错误
 class CountError(Exception):
     def __init__(self, message):
         self.message = message
